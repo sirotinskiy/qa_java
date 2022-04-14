@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="com.example.FelineTest" time="0.016" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="com.example.AlexTest" time="0.001" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.3.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -65,8 +65,7 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.example.FelineTest" name="shouldBeGetKittensWithOutParam" time="0.014"/>
-  <testcase classname="com.example.FelineTest" name="eatMeat" time="0.001"/>
-  <testcase classname="com.example.FelineTest" name="shouldBeGetFamily" time="0"/>
-  <testcase classname="com.example.FelineTest" name="shouldBeGetKittensWithParam" time="0.001"/>
+  <testcase classname="com.example.AlexTest" name="shouldBeGetKittens" time="0.001"/>
+  <testcase classname="com.example.AlexTest" name="shouldBeGetFriends" time="0"/>
+  <testcase classname="com.example.AlexTest" name="shouldBeGetPlaceOfLiving" time="0"/>
 </testsuite>
