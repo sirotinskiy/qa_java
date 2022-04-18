@@ -10,6 +10,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import java.util.List;
 
 import static org.junit.Assert.*;
+
 @RunWith(MockitoJUnitRunner.class)
 public class FelineTest {
 
@@ -22,7 +23,7 @@ public class FelineTest {
     private Feline feline;
 
     @Before
-    public void init(){
+    public void init() {
         feline = new Feline();
     }
 
@@ -54,6 +55,6 @@ public class FelineTest {
     public void shouldBeGetKittensWithParam() {
         int expectKittenCount = 1;
         int actualKittenCount = feline.getKittens(expectKittenCount);
-        assertEquals(expectKittenCount,actualKittenCount);
+        assertEquals(expectKittenCount, actualKittenCount);
     }
 }

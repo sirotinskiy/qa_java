@@ -18,11 +18,11 @@ public class LionTest {
     @Mock
     private Feline feline;
 
-    private String sexLion = "Самец";
     private Lion lion;
 
     @Before
     public void init() throws Exception {
+        String sexLion = "Самец";
         lion = new Lion(feline, sexLion);
     }
 
@@ -39,6 +39,6 @@ public class LionTest {
         List<String> expectFoodList = List.of("Животные", "Птицы", "Рыба");
         Mockito.when(feline.getFood("Хищник")).thenReturn(expectFoodList);
         List<String> actualFoodList = lion.getFood();
-        assertEquals(expectFoodList,actualFoodList);
+        assertEquals(expectFoodList, actualFoodList);
     }
 }

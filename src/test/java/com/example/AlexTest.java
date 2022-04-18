@@ -9,6 +9,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import java.util.List;
 
 import static org.junit.Assert.*;
+
 @RunWith(MockitoJUnitRunner.class)
 public class AlexTest {
 
@@ -33,7 +34,7 @@ public class AlexTest {
     public void shouldBeGetFriends() {
         List<String> expectListFriends = List.of("Марти", "Глории", "Мелман");
         List<String> actualListFriends = alex.getFriends();
-        assertEquals(expectListFriends,actualListFriends);
+        assertEquals(expectListFriends, actualListFriends);
     }
 
     @Test

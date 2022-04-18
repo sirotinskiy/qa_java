@@ -17,13 +17,10 @@ public class CatTest {
     @Mock
     Feline feline;
 
-    @Mock
-    Predator predator;
-
     private Cat cat;
 
     @Before
-    public void init(){
+    public void init() {
         cat = new Cat(feline);
     }
 
@@ -39,6 +36,6 @@ public class CatTest {
         Mockito.when(feline.eatMeat()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         List<String> expectMeatList = List.of("Животные", "Птицы", "Рыба");
         List<String> actualMeatList = cat.getFood();
-        assertEquals(expectMeatList,actualMeatList);
+        assertEquals(expectMeatList, actualMeatList);
     }
 }

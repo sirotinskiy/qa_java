@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="com.example.LionParamTest" time="0.035" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="com.example.LionParamTest" time="0.017" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.3.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -65,10 +65,10 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.example.LionParamTest" name="shouldBeDoesHaveMane[0]" time="0.029"/>
-  <testcase classname="com.example.LionParamTest" name="testConstructor[0]" time="0.003"/>
-  <testcase classname="com.example.LionParamTest" name="shouldBeDoesHaveMane[1]" time="0.001"/>
-  <testcase classname="com.example.LionParamTest" name="testConstructor[1]" time="0.001"/>
-  <testcase classname="com.example.LionParamTest" name="shouldBeDoesHaveMane[2]" time="0"/>
-  <testcase classname="com.example.LionParamTest" name="testConstructor[2]" time="0.001"/>
+  <testcase classname="com.example.LionParamTest" name="shouldBeDoesHaveMane[Тестовые данные: null Самец true null]" time="0.008"/>
+  <testcase classname="com.example.LionParamTest" name="testConstructor[Тестовые данные: null Самец true null]" time="0.001"/>
+  <testcase classname="com.example.LionParamTest" name="shouldBeDoesHaveMane[Тестовые данные: null Самка false null]" time="0.001"/>
+  <testcase classname="com.example.LionParamTest" name="testConstructor[Тестовые данные: null Самка false null]" time="0.001"/>
+  <testcase classname="com.example.LionParamTest" name="shouldBeDoesHaveMane[Тестовые данные: null smdfh false Используйте допустимые значения пола животного - самец или самка]" time="0.002"/>
+  <testcase classname="com.example.LionParamTest" name="testConstructor[Тестовые данные: null smdfh false Используйте допустимые значения пола животного - самец или самка]" time="0.004"/>
 </testsuite>

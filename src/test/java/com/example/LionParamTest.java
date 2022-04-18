@@ -6,7 +6,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.mockito.runners.MockitoJUnitRunner;
 
 import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
@@ -16,28 +15,27 @@ public class LionParamTest {
 
     @Mock
     private static Feline feline;
-    @Mock
-    private static Lion lionMock;
 
-    private String sexLion;
-    private String expectMessageException;
-    private boolean expectMane;
+    private final String sexLion;
+    private final String expectMessageException;
+    private final boolean expectMane;
+
     private Lion lion;
 
     @Before
-    public void init(){
+    public void init() {
         MockitoAnnotations.initMocks(this);
     }
 
-    public LionParamTest(Feline feline, String sexLion, boolean expectMane, String expectMessageException){
+    public LionParamTest(Feline feline, String sexLion, boolean expectMane, String expectMessageException) {
         this.feline = feline;
         this.sexLion = sexLion;
         this.expectMane = expectMane;
         this.expectMessageException = expectMessageException;
     }
 
-    @Parameterized.Parameters
-    public static Object[][] getFoodResult(){
+    @Parameterized.Parameters(name = "Тестовые данные: {0} {1} {2} {3}")
+    public static Object[][] getFoodResult() {
         return new Object[][]{
                 {feline, "Самец", true, null},
                 {feline, "Самка", false, null},
@@ -46,22 +44,22 @@ public class LionParamTest {
     }
 
     @Test
-    public void testConstructor(){
+    public void testConstructor() {
         try {
-            lion = new Lion(feline,sexLion);
+            lion = new Lion(feline, sexLion);
             assertTrue(lion instanceof Lion);
-        }catch (Exception e){
+        } catch (Exception e) {
             assertEquals(expectMessageException, e.getMessage());
         }
     }
 
     @Test
-    public void shouldBeDoesHaveMane(){
-        try{
-            lion = new Lion(feline,sexLion);
+    public void shouldBeDoesHaveMane() {
+        try {
+            lion = new Lion(feline, sexLion);
             boolean actualMane = lion.doesHaveMane();
-            assertEquals(expectMane,actualMane);
-        }catch (Exception e){
+            assertEquals(expectMane, actualMane);
+        } catch (Exception e) {
             assertEquals(expectMessageException, e.getMessage());
         }
     }

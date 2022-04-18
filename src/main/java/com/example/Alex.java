@@ -2,7 +2,7 @@ package com.example;
 
 import java.util.List;
 
-public class Alex extends Lion{
+public class Alex extends Lion {
 
     public Alex(Feline feline) throws Exception {
         super(feline, "Самец");
@@ -13,11 +13,11 @@ public class Alex extends Lion{
         return 0;
     }
 
-    public List<String> getFriends(){
+    public List<String> getFriends() {
         return List.of("Марти", "Глории", "Мелман");
     }
 
-    public String getPlaceOfLiving(){
+    public String getPlaceOfLiving() {
         return "Нью-Йоркский зоопарк";
     }
 }
